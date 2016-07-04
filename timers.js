@@ -14,7 +14,7 @@ resetBtn.addEventListener("click", resetWatch);
 pauseBtn.addEventListener("click", pauseWatch);
 
 function startWatch() {
-  h1Element.innerHTML  = secondsCounter;
+  h1Element.innerHTML  = "Time Elapsed: " + secondsCounter;
   timerId=setInterval(updateTime, 1000);
 }
 
@@ -27,7 +27,7 @@ function pauseWatch() {
      secondsCounter = 0;
    }
   secondsCounter += 1;
-  h1Element.innerHTML = secondsCounter;
+  h1Element.innerHTML = "Time Elapsed: " + secondsCounter;
 }
 
 function resetWatch() {
