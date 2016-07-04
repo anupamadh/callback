@@ -1,7 +1,7 @@
 // your code here:
 var secondsCounter = 0;
 var timerId;
-var setIntervalID;
+
 
 var resetBtn = document.getElementById('reset');
 var startBtn = document.getElementById('start');
@@ -15,11 +15,11 @@ pauseBtn.addEventListener("click", pauseWatch);
 
 function startWatch() {
   h1Element.innerHTML  = secondsCounter;
-  setIntervalID=setInterval(updateTime, 1000);
+  timerId=setInterval(updateTime, 1000);
 }
 
 function pauseWatch() {
-  clearInterval(setIntervalID);
+  clearInterval(timerId);
 }
 
  function updateTime (){
