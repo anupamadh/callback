@@ -31,7 +31,7 @@ function pauseWatch() {
 }
 
 function resetWatch() {
-  clearInterval(setIntervalID);
+  clearInterval(timerId);
   h1Element.innerHTML = "Stop Watch"
   secondsCounter = 0
 }
